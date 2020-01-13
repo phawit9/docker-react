@@ -6,4 +6,4 @@ before_install:
     - docker build -t phawit9/docer-react -f Dockerfile.dev .
 
 script:
-    - docker run phawit9/docer-react npm run test -- --coverage
+    - docker run -e CI=true phawit9/docer-react npm run test -- --coverage
