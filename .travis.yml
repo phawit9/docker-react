@@ -8,7 +8,7 @@ before_install:
 script:
     - docker run -e CI=true phawit9/docer-react npm run test -- --coverage
 
- deploy:
+deploy:
     edge: true
     provider: elasticbeanstalk
     region: "us-east-2"
@@ -19,5 +19,4 @@ script:
     on:
         branch: master
     acess_key_id: $AWS_ACCESS_KEY
-    secret_acess_key: 
-        secure: "$AWS_SECRET_KEY"
+    secret_acess_key: $AWS_SECRET_KEY
