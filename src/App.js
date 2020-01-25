@@ -10,6 +10,7 @@ function App() {
         <p>
           Bye 
         </p>
+      </header>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,7 +19,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        <p className="App-intro">
+          I was change on the feature branch
+        </p>
+
     </div>
   );
 }
